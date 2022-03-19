@@ -1,8 +1,6 @@
 body
 {
-    margin: 0;
-    padding: 0;
-   
+  
 }
 .navbar
 {
@@ -27,9 +25,10 @@ body
 }
 .navbar-nav li a:hover{
     color: #000000;
-    background-color: #ffffff;
-	border-radius: 10px;
+    
+
 }
+
 .navbar-brand
 {
     color: #ffffff;
@@ -44,7 +43,7 @@ body
     color: #ffffff;
     height: 50%;
     text-align: center;
-	margin-top: -30px;
+	margin-top: -80px;
 }
 h1{
     font-size: 500%;
@@ -155,22 +154,14 @@ p{
   
   
   .container-contact100 {
-    width: 100%;  
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  
+    
+  
     
   }
   
   .wrap-contact100 {
-    width: 40%;
-    background: rgb(0,0,0,0.6);
+    width: 100%;
     border-radius: 10px;
     overflow: hidden;
   
@@ -218,7 +209,7 @@ p{
   
   input.input100 {
     height: 50px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 0 30px 0 50px;
   }
   
@@ -228,7 +219,7 @@ p{
   
   textarea.input100 {
     min-height: 150px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 14px 30px;
   }
   
@@ -266,24 +257,8 @@ p{
     color: rgba(132,106,221, 0.5);
   }
   
-  .input100:focus + .focus-input100 {
-    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
-    animation: anim-shadow 0.5s ease-in-out forwards;
-  }
-  
-  @-webkit-keyframes anim-shadow {
-    to {
-      box-shadow: 0px 0px 60px 25px;
-      opacity: 0;
-    }
-  }
-  
-  @keyframes anim-shadow {
-    to {
-      box-shadow: 0px 0px 60px 25px;
-      opacity: 0;
-    }
-  }
+
+ 
   
   .symbol-input100 {
     display: -webkit-box;
@@ -293,7 +268,7 @@ p{
     display: flex;
     align-items: center;
     position: absolute;
-    border-radius: 25px;
+    border-radius: 15px;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -309,13 +284,6 @@ p{
     transition: all 0.4s;
   }
   
-  .input100:focus + .focus-input100 + .symbol-input100 {
-    color: #846add;
-    padding-left: 22px;
-  }
-  
-  /*------------------------------------------------------------------
-  [ Button ]*/
   .container-contact100-form-btn {
     width: 100%;
     display: -webkit-box;
@@ -331,7 +299,7 @@ p{
   .contact100-form-btn {
     width: 40%;
     height: 50px;
-    border-radius: 15px;
+    border-radius: 10px;
     background: #6fabdd;
     font-family: Montserrat-Bold;
     font-size: 17px;
@@ -474,12 +442,7 @@ p{
 
   .donatebox
   {
-    background-color: rgb(0,0,0,0.6);
-    border-radius: 20px;
-    padding: 5%;
-    text-align: center;
-    color: #fff;
-   
+    
   }
   .donatebox h1
   {
@@ -490,3 +453,66 @@ p{
   {
     margin-bottom: 3px;
   }
+  #scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff
+}
+#scroll:hover {
+    background-color:#e74c3c;
+    opacity:1;
+    filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+.my-element {
+  display: inline-block;
+  
+
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.my-elementt
+{
+	animation: fadeInLeft; 
+  animation-duration: 2s;
+}
+.fadeIn
+{
+		animation: fadeIn; 
+  animation-duration: 3s;
+}
+.header
+{
+	
+	
+}
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
